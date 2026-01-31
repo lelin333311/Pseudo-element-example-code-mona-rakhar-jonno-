@@ -1,0 +1,18 @@
+a.services::after,
+a.projects::after,
+a.about::after,
+a.company::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--hover-button-color);
+    transition: width .3s;
+}
+
+a.services:hover::after,
+a.projects:hover::after,
+a.about:hover::after,
+a.company:hover::after {
+    width: 100%;
+}
